@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["sandbox", "winit", "winit-core", "winit-win32"]
