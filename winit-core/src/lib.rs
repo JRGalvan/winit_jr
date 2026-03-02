@@ -1,14 +1,17 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! winit-core is the crate that designs and holds the core types and traits used in winit.
+//! If you want to implement a backend for winit, this is the place to start.
+//!
+//! The dpi mod holds the DPI-related types and traits.
+//!
+//! The event mod holds everything related to events. It is the home for the WindowEvent, the DeviceEvent, the EventLoop, the EventLoopBuilder and the EventHandler.
+//!
+//! The window mod holds everything related to the window. It is the home for the Window, WindowId, and the WindowAttributes.
+//!
+//! The os_error mod holds the OS-specific error types and traits that may be generated when using winit.
+//!
+//! The path to create a new backend is to implement the EventLoopBuilder trait, the EventLoop trait, the Window trait.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod dpi;
+pub mod event;
+pub mod os_error;
+pub mod window;

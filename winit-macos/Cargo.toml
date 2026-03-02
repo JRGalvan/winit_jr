@@ -1,6 +1,6 @@
 [package]
-name = "winit-core"
-version.workspace = true
+name = "winit-macos"
 edition.workspace = true
+version.workspace = true
 
 [dependencies]

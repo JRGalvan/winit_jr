@@ -1,6 +1,7 @@
 [package]
-name = "winit-core"
+name = "winit-windows"
 version.workspace = true
 edition.workspace = true
 
 [dependencies]
+windows-sys = {workspace = true, features = []}

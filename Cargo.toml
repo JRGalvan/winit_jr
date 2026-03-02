@@ -1,3 +1,21 @@
 [workspace]
 resolver = "3"
-members = ["sandbox", "winit", "winit-core", "winit-win32"]
+members = ["sandbox", "winit", "winit-core", "winit-macos", "winit-windows"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[workspace.dependencies]
+winit = {path = "winit"}
+winit-core = {path = "winit-core"}
+winit-macos = {path = "winit-macos"}
+winit-windows = {path = "winit-windows"}
+
+# core
+raw_window_handle = {package = "raw-window-handle", version = "0.6.2", features = ["std"]}
+
+# macos
+
+# windows
+windows-sys = "0.61.2"
