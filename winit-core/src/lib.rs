@@ -1,8 +1,6 @@
 //! winit-core is the crate that designs and holds the core types and traits used in winit.
 //! If you want to implement a backend for winit, this is the place to start.
 //!
-//! The dpi mod holds the DPI-related types and traits.
-//!
 //! The event mod holds everything related to events. It is the home for the WindowEvent, the DeviceEvent, the EventLoop, the EventLoopBuilder and the EventHandler.
 //!
 //! The window mod holds everything related to the window. It is the home for the Window, WindowId, and the WindowAttributes.
