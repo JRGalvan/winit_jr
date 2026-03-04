@@ -24,6 +24,11 @@ dependencies = [
 [[package]]
 name = "winit"
 version = "0.1.0"
+dependencies = [
+ "winit-core",
+ "winit-macos",
+ "winit-windows",
+]
 
 [[package]]
 name = "winit-core"
@@ -32,6 +37,9 @@ version = "0.1.0"
 [[package]]
 name = "winit-macos"
 version = "0.1.0"
+dependencies = [
+ "winit-core",
+]
 
 [[package]]
 name = "winit-windows"

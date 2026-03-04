@@ -4,4 +4,4 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-windows-sys = {workspace = true, features = []}
+windows-sys = {version = "0.61.2", features = []}

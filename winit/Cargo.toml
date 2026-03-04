@@ -4,3 +4,10 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
+winit-core = { workspace = true }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+winit-macos = { workspace = true }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winit-windows = { workspace = true }
