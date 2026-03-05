@@ -5,6 +5,9 @@ version = 4
 [[package]]
 name = "sandbox"
 version = "0.1.0"
+dependencies = [
+ "windows-sys",
+]
 
 [[package]]
 name = "windows-link"
