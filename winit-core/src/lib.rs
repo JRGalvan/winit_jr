@@ -9,9 +9,12 @@
 //!
 //! The path to create a new backend is to implement the EventLoopBuilder trait, the EventLoop trait, the Window trait.
 
+pub mod cursor;
 pub mod device_id;
 pub mod dpi;
 pub mod event;
+pub mod icon;
+pub mod monitor;
 pub mod os_error;
 pub mod window;
 
