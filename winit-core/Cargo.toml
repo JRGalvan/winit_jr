@@ -4,3 +4,6 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
+bitflags = { version = "2.11", features = ["std"]}
+keyboard-types = { version = "0.8"}
+smol_str = "0.3"
