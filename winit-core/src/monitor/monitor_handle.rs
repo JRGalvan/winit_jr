@@ -3,7 +3,7 @@ use crate::monitor::VideoMode;
 use std::borrow::Cow;
 use std::fmt;
 
-pub trait MonitorHandler: Clone + fmt::Debug + PartialEq + Eq + Send + Sync {
+pub trait MonitorHandle: Clone + fmt::Debug + PartialEq + Eq + Send + Sync {
     fn id(&self) -> u128;
 
     fn native_id(&self) -> u64;

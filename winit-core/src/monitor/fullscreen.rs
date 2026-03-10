@@ -1,7 +1,7 @@
-use crate::monitor::{MonitorHandler, VideoMode};
+use crate::monitor::{MonitorHandle, VideoMode};
 
 #[derive(Clone, Debug, PartialEq, Eq)]
-pub enum Fullscreen<MH: MonitorHandler> {
+pub enum Fullscreen<MH: MonitorHandle> {
     Exclusive(MH, VideoMode),
     Borderless(Option<MH>),
 }

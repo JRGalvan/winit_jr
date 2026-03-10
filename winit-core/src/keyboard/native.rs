@@ -21,5 +21,5 @@ pub trait NativeLogicalKey:
 
     fn backend(&self) -> BackendType;
 
-    fn to_physical_key(self) -> Option<Self::PhysicalKey>;
+    fn to_physical_key(&self) -> Option<Self::PhysicalKey>;
 }
