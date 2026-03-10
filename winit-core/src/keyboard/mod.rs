@@ -1,8 +1,8 @@
 pub mod modifiers;
 pub mod native;
 
-use keyboard_types::{Code as KeyCode, NamedKey};
-use native::{NativeLogicalKey, NativePhysicalKey};
+pub use keyboard_types::{Code as KeyCode, NamedKey};
+pub use native::{NativeLogicalKey, NativePhysicalKey};
 use smol_str::SmolStr;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]

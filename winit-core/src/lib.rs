@@ -1,11 +1,11 @@
 pub mod cursor;
 pub mod device_id;
 pub mod dpi;
+pub mod error;
 pub mod event;
 pub mod icon;
 pub mod keyboard;
 pub mod monitor;
-pub mod os_error;
 pub mod window;
 
 pub use crate::device_id::DeviceId;

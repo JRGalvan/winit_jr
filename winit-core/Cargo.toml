@@ -7,3 +7,4 @@ edition.workspace = true
 bitflags = { version = "2.11", features = ["std"]}
 keyboard-types = { version = "0.8"}
 smol_str = "0.3"
+thiserror = "2.0"
