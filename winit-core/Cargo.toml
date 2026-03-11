@@ -5,7 +5,7 @@ edition.workspace = true
 
 [dependencies]
 bitflags = { version = "2.11", features = ["std"]}
+cursor-icon = "1.2"
 keyboard-types = { version = "0.8"}
 smol_str = "0.3"
 thiserror = "2.0"
-cursor-icon = "1.2"
