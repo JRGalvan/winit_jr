@@ -13,3 +13,15 @@ pub use ime_purpose::ImePurpose;
 pub use ime_request::ImeRequest;
 pub use ime_request_data::ImeRequestData;
 pub use ime_surrounding_text::ImeSurroundingText;
+
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+pub enum Ime {
+    Enabled,
+    Preedit(String, Option<(usize, usize)>),
+    Commit(String),
+    DeleteSurrounding {
+        before_bytes: usize,
+        after_bytes: usize,
+    },
+    Disabled,
+}

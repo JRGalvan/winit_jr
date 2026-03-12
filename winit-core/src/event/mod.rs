@@ -1,5 +1,22 @@
-pub mod device_event;
-pub mod event_handler;
-pub mod event_loop;
-pub mod start_cause;
-pub mod window_event;
+mod device_event;
+mod event_handler;
+mod event_loop;
+mod force;
+mod mouse_button;
+mod mouse_scroll_delta;
+mod pointer;
+mod source;
+mod start_cause;
+mod window_event;
+
+pub use device_event::DeviceEvent;
+pub use event_handler::EventHandler;
+pub use event_loop::EventLoop;
+pub use event_loop::event_loop_builder::EventLoopBuilder;
+pub use force::Force;
+pub use mouse_button::MouseButton;
+pub use mouse_scroll_delta::MouseScrollDelta;
+pub use pointer::PointerKind;
+pub use source::{ButtonSource, PointerSource};
+pub use start_cause::StartCause;
+pub use window_event::WindowEvent;

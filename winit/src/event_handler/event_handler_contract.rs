@@ -1,6 +1,6 @@
 use crate::backend::{DeviceId, EventLoop, WindowId};
 use crate::event_handler::EventHandler as UserEventHandler;
-use winit_core::event::event_handler::EventHandler as BackendEventHandler;
+use winit_core::event::EventHandler as BackendEventHandler;
 use winit_core::{DeviceEvent, StartCause, WindowEvent};
 
 pub struct EventHandlerContract<T: UserEventHandler>(pub T);

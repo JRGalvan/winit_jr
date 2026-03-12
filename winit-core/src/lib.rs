@@ -1,20 +1,21 @@
 pub mod cursor;
-pub mod device_id;
 pub mod dpi;
 pub mod error;
 pub mod event;
 pub mod icon;
+pub mod id;
 pub mod ime;
 pub mod keyboard;
+pub mod modifiers;
 pub mod monitor;
+pub mod tablet;
 pub mod window;
 
-pub use crate::device_id::DeviceId;
-pub use crate::event::device_event::DeviceEvent;
-pub use crate::event::event_loop::EventLoop;
-pub use crate::event::start_cause::StartCause;
-pub use crate::event::window_event::WindowEvent;
-pub use crate::window::window_id::WindowId;
+pub use crate::event::DeviceEvent;
+pub use crate::event::EventLoop;
+pub use crate::event::StartCause;
+pub use crate::event::WindowEvent;
+pub use crate::id::{DeviceId, WindowId};
 
 #[allow(non_camel_case_types)]
 pub enum BackendType {

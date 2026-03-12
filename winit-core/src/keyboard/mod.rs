@@ -1,8 +1,12 @@
-pub mod modifiers;
-pub mod native;
+mod element_state;
+mod key_event;
+mod native;
 
+pub use element_state::ElementState;
+pub use key_event::{KeyEvent, RawKeyEvent};
 pub use keyboard_types::{Code as KeyCode, NamedKey};
 pub use native::{NativeLogicalKey, NativePhysicalKey};
+
 use smol_str::SmolStr;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
