@@ -4,6 +4,7 @@ pub mod dpi;
 pub mod error;
 pub mod event;
 pub mod icon;
+pub mod ime;
 pub mod keyboard;
 pub mod monitor;
 pub mod window;

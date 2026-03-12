@@ -1,5 +1,4 @@
 pub mod activation_token;
-pub mod ime;
 pub mod theme;
 pub mod window_attributes;
 pub mod window_buttons;
